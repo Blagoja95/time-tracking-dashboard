@@ -1,0 +1,49 @@
+@media (min-width: 1000px) {
+  .component {
+    display: grid;
+    grid-template-columns: repeat(4, 25rem);
+    grid-template-rows: repeat(2, 24rem);
+    row-gap: 5rem;
+    column-gap: 3rem;
+  }
+
+  .profile-component {
+    grid-row: 1/-1;
+    grid-column: 1/2;
+  }
+
+  .profile-top {
+    height: 35rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    padding-left: 4rem;
+    gap: 4rem;
+  }
+
+  .profile-bottom {
+    height: 20rem;
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+  }
+
+  .profile-name {
+    font-size: 4rem;
+    width: 10ch;
+  }
+
+  .data-inner {
+    height: 18.5rem;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .stats-hours {
+    font-size: 4rem;
+  }
+}

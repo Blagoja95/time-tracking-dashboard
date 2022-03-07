@@ -1,0 +1,52 @@
+// .profile-component {
+//   width: 100%;
+//   height: 100%;
+// }
+
+.profile-component {
+  position: relative;
+  z-index: 0;
+}
+.profile-top {
+  background: $Blue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  height: 12rem;
+  padding-left: 2rem;
+  border-radius: $bor-rad;
+  z-index: 1;
+}
+
+.profile-info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-img {
+  width: 6.4rem;
+  border-radius: 100%;
+  border: 2px solid $White;
+}
+
+.profile-bottom {
+  position: absolute;
+  width: 100%;
+  height: 12rem;
+  bottom: 0;
+  left: 0;
+  transform: translate(0%, 0%);
+  background: $Dark-blue;
+  z-index: -1;
+  border-radius: $bor-rad;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.title {
+  color: $White;
+}

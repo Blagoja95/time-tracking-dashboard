@@ -1,0 +1,45 @@
+$font-title: 1.8rem;
+$font-text: 1.5rem;
+$bor-rad: 2rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $Very-dark-blue;
+  font-size: $font-text;
+  color: $Pale-Blue;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.component {
+  margin-top: 10rem;
+}
+
+.component {
+  display: grid;
+  grid-template-columns: 32.5rem;
+  grid-template-rows: 20rem repeat(5, 16rem);
+  row-gap: 2rem;
+}
+
+.title {
+  font-size: $font-title;
+  font-weight: 300;
+}

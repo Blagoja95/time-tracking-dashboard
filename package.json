@@ -2,13 +2,13 @@
   "name": "time-tracking-dashboard-main",
   "version": "1.0.0",
   "description": "![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html"
   },
   "author": "Boka",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
     "parcel": "^2.3.2",
     "sass": "^1.49.9"
   }

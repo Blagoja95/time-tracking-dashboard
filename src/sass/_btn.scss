@@ -1,0 +1,17 @@
+.btn {
+  background: transparent;
+  border: none;
+  font-size: $font-title;
+  color: $Desaturated-blue;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  color: $White;
+}
+
+.btn--selected {
+  color: $White;
+}
+
+

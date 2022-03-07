@@ -18,3 +18,5 @@
 /node_modules
 README-template.md
 style-guide.md
+.parcel-cache
+/dist

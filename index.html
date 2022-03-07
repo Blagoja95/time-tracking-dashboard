@@ -5,117 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/sass/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/sass/main.scss" />
     <title>Frontend Mentor | Time tracking dashboard</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main class="main">
-      Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-      <!-- daily -->
-      Previous - 7hrs
-      <!-- daily -->
-      32hrs
-      <!-- weekly -->
-      Previous - 36hrs
-      <!-- weekly -->
-      103hrs
-      <!-- monthly -->
-      Previous - 128hrs
-      <!-- monthly -->
-
-      Play 1hr
-      <!-- daily -->
-      Previous - 2hrs
-      <!-- daily -->
-      10hrs
-      <!-- weekly -->
-      Previous - 8hrs
-      <!-- weekly -->
-      23hrs
-      <!-- monthly -->
-      Previous - 29hrs
-      <!-- monthly -->
-
-      Study 0hrs
-      <!-- daily -->
-      Previous - 1hr
-      <!-- daily -->
-      4hrs
-      <!-- weekly -->
-      Previous - 7hrs
-      <!-- weekly -->
-      13hrs
-      <!-- monthly -->
-      Previous - 19hrs
-      <!-- monthly -->
-
-      Exercise 1hr
-      <!-- daily -->
-      Previous - 1hr
-      <!-- daily -->
-      4hrs
-      <!-- weekly -->
-      Previous - 5hrs
-      <!-- weekly -->
-      11hrs
-      <!-- monthly -->
-      Previous - 18hrs
-      <!-- monthly -->
-
-      Social 1hr
-      <!-- daily -->
-      Previous - 3hrs
-      <!-- daily -->
-      5hrs
-      <!-- weekly -->
-      Previous - 10hrs
-      <!-- weekly -->
-      21hrs
-      <!-- monthly -->
-      Previous - 23hrs
-      <!-- monthly -->
-
-      Self Care 0hrs
-      <!-- daily -->
-      Previous - 1hr
-      <!-- daily -->
-      2hrs
-      <!-- weekly -->
-      Previous - 2hrs
-      <!-- weekly -->
-      7hrs
-      <!-- monthly -->
-      Previous - 11hrs
-      <!-- monthly -->
+      <div class="component">
+        <div class="profile-component">
+          <div class="profile-top">
+            <figure class="profile-img-box">
+              <img
+                src="src/images/image-jeremy.png"
+                alt="profile image of user"
+                class="profile-img"
+              />
+            </figure>
+            <div class="profile-info-box">
+              <p class="paragraph profile-title">Report for</p>
+              <h1 class="title profile-name">Jeremy Robson</h1>
+            </div>
+          </div>
+          <div class="profile-bottom">
+            <button class="btn btn-daily">Daily</button>
+            <button class="btn btn-weekly btn--selected">Weekly</button>
+            <button class="btn btn-monthly">Monthly</button>
+          </div>
+        </div>
+        <!-- 1 template-->
+        <div class="data-box work">
+          <div class="data-ilustration"></div>
+          <div class="data-inner">
+            <div class="nav">
+              <h2 class="title nav-title">Activity</h2>
+              <button class="btn nav-menu">
+                <img src="src/images/icon-ellipsis.svg" alt="menu icon dots" />
+              </button>
+            </div>
+            <div class="stats">
+              <p class="stats-hours">0hrs</p>
+              <p class="stats-archive">Last time-period - 0hrs</p>
+            </div>
+          </div>
+        </div>
+        <!-- ************** -->
+        <div class="data-box play">
+          <div class="data-ilustration"></div>
+          <div class="data-inner">
+            <div class="nav">
+              <h2 class="title nav-title">Activity</h2>
+              <button class="btn nav-menu">
+                <img src="src/images/icon-ellipsis.svg" alt="menu icon dots" />
+              </button>
+            </div>
+            <div class="stats">
+              <p class="stats-hours">0hrs</p>
+              <p class="stats-archive">Last time-period - 0hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="data-box study">
+          <div class="data-ilustration"></div>
+          <div class="data-inner">
+            <div class="nav">
+              <h2 class="title nav-title">Activity</h2>
+              <button class="btn nav-menu">
+                <img src="src/images/icon-ellipsis.svg" alt="menu icon dots" />
+              </button>
+            </div>
+            <div class="stats">
+              <p class="stats-hours">0hrs</p>
+              <p class="stats-archive">Last time-period - 0hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="data-box exercise">
+          <div class="data-ilustration"></div>
+          <div class="data-inner">
+            <div class="nav">
+              <h2 class="title nav-title">Activity</h2>
+              <button class="btn nav-menu">
+                <img src="src/images/icon-ellipsis.svg" alt="menu icon dots" />
+              </button>
+            </div>
+            <div class="stats">
+              <p class="stats-hours">0hrs</p>
+              <p class="stats-archive">Last time-period - 0hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="data-box social">
+          <div class="data-ilustration"></div>
+          <div class="data-inner">
+            <div class="nav">
+              <h2 class="title nav-title">Activity</h2>
+              <button class="btn nav-menu">
+                <img src="src/images/icon-ellipsis.svg" alt="menu icon dots" />
+              </button>
+            </div>
+            <div class="stats">
+              <p class="stats-hours">0hrs</p>
+              <p class="stats-archive">Last time-period - 0hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="data-box self-care">
+          <div class="data-ilustration"></div>
+          <div class="data-inner">
+            <div class="nav">
+              <h2 class="title nav-title">Activity</h2>
+              <button class="btn nav-menu">
+                <img src="src/images/icon-ellipsis.svg" alt="menu icon dots" />
+              </button>
+            </div>
+            <div class="stats">
+              <p class="stats-hours">0hrs</p>
+              <p class="stats-archive">Last time-period - 0hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Boka</a>.
     </footer>
   </body>
 </html>
