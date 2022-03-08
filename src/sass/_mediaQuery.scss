@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(4, 25rem);
     grid-template-rows: repeat(2, 24rem);
-    row-gap: 5rem;
+    row-gap: 3rem;
     column-gap: 3rem;
   }
 
@@ -13,7 +13,7 @@
   }
 
   .profile-top {
-    height: 35rem;
+    height: 33.5rem;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -36,7 +36,7 @@
   }
 
   .data-inner {
-    height: 18.5rem;
+    height: 20rem;
   }
 
   .stats {

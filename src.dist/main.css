@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #0f1424;
+  font-size: 1.5rem;
+  color: #bdc1ff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.component {
+  margin-top: 10rem;
+}
+
+.component {
+  display: grid;
+  grid-template-columns: 32.5rem;
+  grid-template-rows: 20rem repeat(5, 16rem);
+  row-gap: 2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.profile-component {
+  position: relative;
+  z-index: 0;
+}
+
+.profile-top {
+  background: #5847eb;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  height: 12rem;
+  padding-left: 2rem;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.profile-info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-img {
+  width: 6.4rem;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+
+.profile-bottom {
+  position: absolute;
+  width: 100%;
+  height: 12rem;
+  bottom: 0;
+  left: 0;
+  transform: translate(0%, 0%);
+  background: #1c1f4a;
+  z-index: -1;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.title {
+  color: #fff;
+}
+
+.data-box {
+  position: relative;
+}
+
+.data-ilustration {
+  position: absolute;
+  width: 100%;
+  height: 10rem;
+  background: #ff8c66 url("../images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  border-radius: 2rem;
+  z-index: 0;
+}
+
+.data-inner {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  transform: translate(0%, 30%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 12rem;
+  background: #1c1f4a;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+.nav,
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats {
+  gap: 1rem;
+}
+
+.stats-hours {
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.play .data-ilustration {
+  background: #56c2e6 url("../images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -1rem;
+}
+
+.study .data-ilustration {
+  background: #ff5c7c url("../images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -1rem;
+}
+
+.exercise .data-ilustration {
+  background: #56c2e6 url("../images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -0.1rem;
+}
+
+.social .data-ilustration {
+  background: #7536d3 url("../images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -1.5rem;
+}
+
+.self-care .data-ilustration {
+  background: #f1c65b url("../images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -1rem;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #6f76c8;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  color: #fff;
+}
+
+.btn--selected {
+  color: #fff;
+}
+
+.attribution {
+  color: white;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 1000px) {
+  .component {
+    display: grid;
+    grid-template-columns: repeat(4, 25rem);
+    grid-template-rows: repeat(2, 24rem);
+    row-gap: 5rem;
+    column-gap: 3rem;
+  }
+
+  .profile-component {
+    grid-row: 1/-1;
+    grid-column: 1/2;
+  }
+
+  .profile-top {
+    height: 35rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    padding-left: 4rem;
+    gap: 4rem;
+  }
+
+  .profile-bottom {
+    height: 20rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+  }
+
+  .profile-name {
+    font-size: 4rem;
+    width: 10ch;
+  }
+
+  .data-inner {
+    height: 18.5rem;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .stats-hours {
+    font-size: 4rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

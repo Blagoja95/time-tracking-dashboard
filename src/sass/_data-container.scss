@@ -19,7 +19,7 @@
   z-index: 1;
   top: 0;
   right: 0;
-  transform: translate(0%, 30%);
+  transform: translateY(20%);
 
   display: flex;
   flex-direction: column;
@@ -34,10 +34,22 @@
   font-weight: 500;
 }
 
+.data-inner:hover {
+  // .data-inner {
+  background: $Dark-blue1;
+  cursor: pointer;
+  // }
+}
+
 .nav,
 .stats {
   display: flex;
   justify-content: space-between;
+}
+
+.nav-menu:hover {
+  cursor: pointer;
+  color: $White;
 }
 
 .stats {
